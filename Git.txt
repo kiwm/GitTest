@@ -1,0 +1,50 @@
+
+# Demo
+
+Some description!
+
+depois de instalar criar uma variável de ambiente para poder utilizar no powershell
+
+objetos fundamentais
+blobs, árvores que são análogas aos diretórios podendo conter outras árvores ou blobs.
+commit aponta para uma árvore mas metadados como autor commit anterior mensagem é timestamp tudo criptografado pelo sha1 com um código hash de 40 caracteres cada indivíduo tem um hash.
+
+chave SSH
+Serve para criar uma conexão segura entre duas máquinas com uma chave pública é uma privada.
+
+ssh-keygen -t ed25519 -C pedromaltapedrozo@gmail.com
+
+navegar para a pasta local para ver as duas chaves
+
+cat id_ pub para pegar a chave publica adicionar ela no git-hub
+
+determinar o agente ssh para cuidar das chaves
+eval $(ssh-agent -s)
+passar a chave privada
+ssh-add id_ed25519
+
+clonar repositório
+git clone ssh clone link
+
+
+iniciar repositório
+
+git init:
+
+iniciar conta 
+git config --global user.email “pedromaltapedrozo@gmail.com”
+git config --global user.name “kiwm”
+
+
+git add  *
+git commit -m”mensagem”
+git status: verificar galho é se tem algo para comitar
+
+adicionar origin ao servidor do git hub
+git remote add origin link gerado no git
+setar a branch principal
+git branch -M main
+enviar os dados para o server
+git push origin main
+
+ 
